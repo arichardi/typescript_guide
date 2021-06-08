@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Typescript study guide
 
 ## What is it / O que é ?
@@ -30,7 +29,7 @@ tsc sandbox.ts -w
 
 *with include you especificate the only place will look to compile*
 
-#### basic rules
+### basic rules
 
 Variables typing is the same that js, it will incur and keep the type coercion, you
 don't need to specificate every type in the project
@@ -74,4 +73,36 @@ You can infer the types os the array, and can have more than one type
  }
 ```
 **in the case of objects, you can't add a new proprety to an object once you already defined, you need to keep the same structure** 
+
+##### Functions
+
+Functions works the same way of other declarations
+
+If the argument is optional you can use the '?' or specificate a default value
+
+```typescript
+ function calculate (first: number, second: number, third?:number) {}
+ function calculate (first: number, second: number, third:number = 10) {}
+```
+
+**You can infer the type of the return, if the function do not have an explicit return the type will be void**
+
+```typescript
+ function calculate (first: number, second: number): number {}
+```
+
+##### DOM
+
+Working with the Dom may have some diferent problems
+
+**Sometimes may appear an error on a possibility of a null , you can specify '!' to let clear that you know that the object is won't be inexistent**
+
+```typescript
+ const anchor = document.querySelector('a')!
+```
+You may need to use 'as' in some cases where the typescript can infer the type of object
+
+```typescript
+ const anchor = document.querySelector('.classForm') as HTMLFormElement
+```
 
