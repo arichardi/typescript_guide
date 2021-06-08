@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "tsc sandbox.ts -w"
+    "compile": "tsc -w"
   },
   "keywords": [],
   "author": "",

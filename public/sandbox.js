@@ -1,3 +1,4 @@
+"use strict";
 var character = 'Luigi';
 console.log(character);
 var inputs = document.querySelectorAll('input');
