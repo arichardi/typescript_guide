@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Typescript study guide
 
 ## What is it / O que é ?
@@ -73,3 +74,4 @@ You can infer the types os the array, and can have more than one type
  }
 ```
 **in the case of objects, you can't add a new proprety to an object once you already defined, you need to keep the same structure** 
+
